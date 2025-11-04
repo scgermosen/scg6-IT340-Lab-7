@@ -10,7 +10,7 @@ res.send('Hello MEAN Stack!');
 // route for handling requests from the Anguar client
 app.get('api/message', (req, res) => {
     res.json({message: 
-        "Hello from the Express server"    });
+        'Hello from the Express server!'    });
 });
 
 app.listen(port, () => {
