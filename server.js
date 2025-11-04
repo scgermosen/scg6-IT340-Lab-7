@@ -2,6 +2,15 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const cors = require('cors');
+const mongoose = require('mongoose');
+const userRoutes = require('./routes/userRoutes'); //Imports user routes
+
+require('dotenv').config();
+
+//middleware to parse JSON request bodies
+app.use(express.json());
+
+app.use('/users', userRoutes);
 
 app.get('/', (req, res) => {
 res.send('Hello MEAN Stack!');
@@ -14,7 +23,7 @@ app.get('api/message', (req, res) => {
 });
 
 app.listen(port, () => {
-console.log('Server is running on port ${port}');
+console.log(`Server is running on port ${port}`);
 });
 
 app.use(cors());
@@ -29,3 +38,10 @@ app.use((req, res, next) => {
         next();
 })
 
+const PORT = process.env.PORT || 8000;
+const MONGOURL = process.env.MONGO_URL;
+
+mongoose.connect(MONGOURL)
+    .then(() => console.log('Connected to MongoDB'))
+    .catch(err => console.error('MongoDB connection error:', err));
+    
