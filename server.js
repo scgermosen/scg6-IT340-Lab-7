@@ -4,7 +4,6 @@ const port = 3000;
 const cors = require('cors');
 const mongoose = require('mongoose');
 const userRoutes = require('./routes/userRoutes'); //Imports user routes
-
 require('dotenv').config();
 
 //middleware to parse JSON request bodies
@@ -26,6 +25,7 @@ app.listen(port, () => {
 console.log(`Server is running on port ${port}`);
 });
 
+// ENABLE CORS
 app.use(cors());
 
 //handling CORS
@@ -61,3 +61,4 @@ app.get("/getUsers", async(req, res)=>{
     const userData = await UserModel.find();
     res.json(userData);
 });
+
