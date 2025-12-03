@@ -1,0 +1,53 @@
+.top-div {
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 5px;
+    text-align: center;
+    background-color: #8b0a8b ;
+    color: whitesmoke;
+}
+
+.book-background {
+    /*width: fit-content; */
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 5px;
+    background-color: #8b0a8b;
+    color: aliceblue;
+    width: 45pc;
+    height: 30pc;  
+    text-align: center;
+    justify-content: center;
+}
+
+.inner {
+    /*
+    width: 35pc;
+    */
+    padding: 5px;
+    height: 28pc; 
+    border-radius: 15px;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+.left-side {
+    width: 22pc;
+    border-right: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    background-color: black;
+    border-radius: 15px 0 0 15px;
+}
+
+.right-side {
+    /*
+    border-left: 5px solid rgb(21, 255, 0);
+    */
+    width: 22pc;
+    padding: 10px;
+    background-color: #c261c2;
+    border-radius: 0 15px 15px 0;
+
+}

@@ -1,18 +1,31 @@
-<h5>
-    User List
-</h5>
-<button mat-raised-button color="accent" [routerLink] = "'/create'">
-    Create a New User
-</button>
+<div class="top-div">
+    <h3>
+MAIN FRONTEND PAGE 
+    </h3>
+    <button mat-raised-button color="accent" [routerLink] = "'/create'">
+    New User Creation
+    </button>
 
-<button mat-raised-button color="accent" [routerLink] = "'/register'">
-    Go to Register Page
-</button>
+    <button mat-raised-button color="accent" [routerLink] = "'/register'">
+    Register
+    </button>
 
-<button mat-raised-button color="accent" [routerLink] = "'/login'">
-    Go to Login Page
-</button>
+    <button   button mat-raised-button color="accent" [routerLink] = "'/login'">
+    Login
+    </button>
 
-<button mat-raised-button color="accent" [routerLink] = "'/dashboard'">
-    Go to Dashboard Page
-</button>
+    <button mat-raised-button color="accent" [routerLink] = "'/dashboard'">
+    Dashboard
+    </button>
+</div>
+
+<div class="linked-buttons">
+
+</div>
+
+<!--
+<div *ngFor="let user of Users">
+    {{ user.name }}
+    {{ user.email }}
+</div>
+-->

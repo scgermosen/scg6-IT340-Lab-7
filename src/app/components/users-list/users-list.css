@@ -1,0 +1,15 @@
+
+.top-div {
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 5px;
+    text-align: center;
+    background-color: #8b0a8b ;
+    color: whitesmoke;
+}
+
+.linked-buttons {
+    padding: auto;
+    width: fit-content;
+    margin: 0 auto;
+    
+}
