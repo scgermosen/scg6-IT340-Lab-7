@@ -1,53 +1,133 @@
 .top-div {
-    font-family: "Lucida Console", "Courier New", monospace;
-    padding: 5px;
+    font-family: "Courier New", Courier, monospace;
+    padding: 0px;
     text-align: center;
     background-color: #8b0a8b ;
     color: whitesmoke;
+    font-weight: 900;
 }
 
 .book-background {
     /*width: fit-content; */
-    padding: 15px;
+    padding: 10px;
     margin: 0 auto;
     margin-top: 15px;
     border-radius: 15px;
     border: 5px;
     background-color: #8b0a8b;
     color: aliceblue;
-    width: 45pc;
-    height: 30pc;  
-    text-align: center;
+    width: 50pc;
+    height: 32.30pc;  
+    
     justify-content: center;
+
+    box-shadow: #8b0a8ba3 0px 5px, rgba(214, 46, 240, 0.3) 0px 10px, rgba(214, 46, 240, 0.2) 0px 15px, rgba(204, 46, 240, 0.1) 0px 20px, rgba(195, 46, 240, 0.05) 0px 25px;
 }
 
 .inner {
-    /*
-    width: 35pc;
-    */
     padding: 5px;
-    height: 28pc; 
-    border-radius: 15px;
-    background: white;
-    display: flex;
+    height: 29pc; 
+    border-radius: 15px 15px 15px 0 ;
+    background: lightgrey;
+    display: flex;    
     justify-content: center;
+ /*   box-shadow: 5px 2px 2px #857e7e; */
+    box-shadow: rgba(60, 64, 67, 0.3) 5px 10px 20px 5px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .left-side {
-    width: 22pc;
-    border-right: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    width: 24pc;
+ /*   border-right: 1px solid rgb(0, 0, 0); */
     padding: 10px;
-    background-color: black;
+    background-color: white;
     border-radius: 15px 0 0 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
 }
 
 .right-side {
     /*
     border-left: 5px solid rgb(21, 255, 0);
     */
-    width: 22pc;
+    width: 24pc;
     padding: 10px;
     background-color: #c261c2;
     border-radius: 0 15px 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /*   FOLLOWING 3 LINES DEFINES BACKGROUND IMAGE OF THIS DIV   */
+    background-image: url(../../images/studentsgroup.png);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 10s;
+    transition: background-position 1s;
+}
+
+.register-form {
+    padding: 5px;
+    font-size: medium;
+}
+
+.terms {
+    font-size: small;
+}
+
+.register-bttn {
+    display: block;
+    margin: auto;
+    cursor:pointer;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border-radius: 8px;
+    margin-bottom: 5px;
+
+    color: black;
+    border-bottom-color: #000000;
+    font-size: 1rem;
+    letter-spacing: .009375em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    align-self: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 5px 2px;
+    transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: white;
+    border-bottom: 1px solid #8b0a8b;
+    border-radius: 4px 4px 0 0 #8b0a8b;
+    background: #c261c284;
+    height: 38px;
+    :hover{
+        border-bottom-color: #8b0a8b;
+        background: transparent;
+    }
+    :focus{
+        border-color: #c261c2;
+    }
 
 }
+
+.terms {
+    font-size: smaller;
+}
+
+.lower-tab {
+    width: 50%;
+    height: 35px;
+    padding-top: 5px;
+    background-color: #c261c2;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+}
+ 
+.lower-tab a {
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+ }

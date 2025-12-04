@@ -1,6 +1,6 @@
 .top-div {
-    font-family: "Lucida Console", "Courier New", monospace;
-    padding: 5px;
+    font-family: "Courier New", Courier, monospace;
+    padding: 0px;
     text-align: center;
     background-color: #8b0a8b ;
     color: whitesmoke;
@@ -9,5 +9,180 @@
 .linked-buttons {
     width: fit-content;
     margin: 0 auto;
+}
+
+.book-background {
+    /*width: fit-content; */
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 5px;
+    background-color: #8b0a8b;
+    color: aliceblue;
+    width: 50pc;
+    height: 32.30pc;  
+    
+    justify-content: center;
+
+    box-shadow: #8b0a8ba3 0px 5px, rgba(214, 46, 240, 0.3) 0px 10px, rgba(214, 46, 240, 0.2) 0px 15px, rgba(204, 46, 240, 0.1) 0px 20px, rgba(195, 46, 240, 0.05) 0px 25px;
 
 }
+
+.inner {
+    /*
+    width: 45pc;
+    */
+    padding: 5px;
+    height: 29pc; 
+    border-radius: 15px 15px 0px 15px ;
+    background: lightgrey;
+    display: flex;    
+    justify-content: center;
+ /*   box-shadow: 5px 2px 2px #857e7e; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.left-side {    /*   IMAGE ON THIS SIDE   */
+    /*
+    border-left: 5px solid rgb(21, 255, 0);
+    */
+    padding: 5px;
+    width: 24pc;
+    background-color: #c261c2;
+    border-radius: 15px 0 0 15px;
+    /* 
+    box-shadow: 5px 5px 2px 2px #857e7e;
+    */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    /*   FOLLOWING 3 LINES DEFINES BACKGROUND IMAGE OF THIS DIV   */
+    background-image: url(../../images/backpack1.png);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 10s;
+    transition: background-position 1s;
+}
+
+.right-side { /*  LOGIN SIDE  */
+    width: 24pc;
+    padding: 5px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 0 15px 15px 0 ;
+    /*
+    box-shadow: 5px 5px 2px 2px #857e7e;
+    */
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px 0px;
+    color: black;
+    justify-content: center;
+    
+}
+
+.right-side h4 {
+    justify-content: center;
+}
+
+.login-form {
+    padding: 10px;
+    padding-top: 5px;
+    font-size: medium;
+}
+
+.email-field {       
+    color: black;
+    border-bottom-color: #000000;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: .009375em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    align-self: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 16px 6px;
+    transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: white;
+    border-bottom: 1px solid #8b0a8b;
+    border-radius: 4px 4px 0 0 #8b0a8b;
+    background: #c261c284;
+    height: 40px;
+    :hover{
+        border-bottom-color: #8b0a8b;
+        background: transparent;
+    }
+    :focus{
+        border-color: #c261c2;
+    }
+}
+
+.psw-field {
+    color: black;
+    border-bottom-color: #8b0a8b;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: .009375em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    align-self: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 16px 6px;
+    transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: white;
+    border-bottom: 1px solid #8b0a8b;
+    border-radius: 4px 4px 0 0 #8b0a8b;
+    background: #c261c284;
+    height: 40px;
+    :hover{
+        border-bottom-color: #8b0a8b;
+        background: transparent;
+    }
+    :focus{
+        border-color: #c261c2;
+    }
+}
+
+.login-bttn {
+    display: block;
+    margin: auto;
+    cursor:pointer;
+}
+
+label {
+    /*
+    display: inline-block;
+    */
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.remember-user {
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+}
+
+.lower-tab {
+    width: 50%;
+    height: 35px;
+    /*
+    padding-left: 50px; */
+    background-color: #c261c2;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    float: right;
+    padding-top: 5px;
+}
+ 
+.lower-tab a {
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+ }

@@ -1,30 +1,45 @@
 <!--   ALIGNS TEXT TO THE CENTER    -->
 <div class="top-div"> 
-    <h3>
-    CREATE AN ACCOUNT
-    </h3>
-    <button mat-raised-button color="accent" [routerLink] = "'/'">
-    Main Page
-    </button>
-
-    <button mat-raised-button color="accent" [routerLink] = "'/login'">
-    Login
-    </button>
-
-    <button mat-raised-button color="accent" [routerLink] = "'/dashboard'">
-    Dashboard
-    </button>
+    <h1>
+    HighlanderPrep
+    </h1>
 </div>
 
 <section class="book-background">
     
     <div class="inner">
         <div class="left-side">
-            LEFT SIDE
+            <h4 style="text-align: center;">Create An Account </h4>
+            <form>
+                <div class="register-form">
+                    <p>Please fill in this form to create an account</p>
+                    
+
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+                    <label for="email"> <b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                    <label for="password"> <b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+                    <label for="password"> <b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="password-repeat" id="password-repeat" required>
+                    
+                    
+                    <!--TERMS AND CONDITIONS: CHECKBOX-->
+                    <mat-checkbox class="terms">Accept and agree to our <a href="register">Terms & Privacy</a>.</mat-checkbox>
+
+                    <button mat-flat-button color="accent" class="register-bttn" [routerLink] = "'/dashboard'">Register</button>
+                </div>
+            </form>
         </div>
         <div class="right-side">
-            RIGHT SIDE
         </div>
+    </div>
+    <div class="lower-tab">
+        <p>Already registered? <a href="/login">Sign In!</a></p>
     </div>
 </section>
 

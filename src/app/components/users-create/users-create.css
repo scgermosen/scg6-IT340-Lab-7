@@ -1,7 +1,7 @@
 .top-div {
     font-family: "Lucida Console", "Courier New", monospace;
     padding: 5px;
-    text-align: center;
+    text-align: left;
     background-color: #8b0a8b ;
     color: whitesmoke;
 }
@@ -9,4 +9,8 @@
 .linked-buttons {
     width: fit-content;
     margin: 0 auto;
+}
+
+.home-icon {
+    color: #fff;
 }
