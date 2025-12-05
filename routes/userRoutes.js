@@ -9,6 +9,7 @@ router.get('/', async (req, res) => {
     res.status(200).json(users);
   } catch (err) {
     res.status(500).json({ message: "An error occured: =>  ", err: err });
+    res.status(500).json({ message: "An error occured in userRoutes.js, line 6-14. =>", err: err })
   }
 });
 
@@ -23,7 +24,7 @@ router.post('/', async (req, res) => {
     const newUser = await user.save();
     res.status(200).json(newUser);
   } catch (err) {
-    res.status(400).json({ message: "An error occured: =>  ", err: err });
+    res.status(400).json({ message: "An error occured on useerRoutes.js -> router.post: =>  ", err: err });
   }
 });
 
