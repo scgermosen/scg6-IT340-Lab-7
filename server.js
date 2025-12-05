@@ -3,11 +3,13 @@ const app = express();
 const port = 3000;
 const cors = require('cors');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 const userRoutes = require('./routes/userRoutes'); //Imports user routes
 require('dotenv').config();
 
 //middleware to parse JSON request bodies
 app.use(express.json());
+app.use(bodyParser.json());
 
 app.use('/users', userRoutes);
 
@@ -51,8 +53,9 @@ mongoose.connect(MONGOURL)
     .catch(err => console.error('MongoDB connection error:', err));
 
 const userSchema = new mongoose.Schema({
-    name: String,
-    age:Number,
+    username: String,
+    email: String,
+    password: String,
 });
 
 const UserModel = mongoose.model("users", userSchema)
