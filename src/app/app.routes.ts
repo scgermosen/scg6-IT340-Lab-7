@@ -10,32 +10,38 @@ import { Dashboard } from './components/dashboard/dashboard';
 export const routes: Routes = [
     {
         path: "",
-        component: UsersList
+        component: UsersList,
+        title: "Users List"
     },
         {
         path: "create",
-        component: UsersCreate
+        component: UsersCreate,
+        title: "New User Creation"
     },
     {
         path: "edit/:id",
-        component: UsersEdit
+        component: UsersEdit,
+        title: "Edit User"
     },
     {
         path: "details/:id",
-        component: UsersDetails
+        component: UsersDetails,
+        title: "User Details"
     },
     {
         path: "register",
         component: Register,
-        title: "Register"
+        title: "Register Page"
     },
     {
         path: "login",
-        component: Login
+        component: Login,
+        title: "Login Page"
     },
     {
         path: "dashboard",
-        component: Dashboard
+        component: Dashboard,
+        title: "User Dashboard"
     }
 
 ];
