@@ -5,7 +5,25 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const userRoutes = require('./routes/userRoutes'); //Imports user routes
+const fs =require('fs');
+const path = require('path');
+const morgan = require('morgan');
 require('dotenv').config();
+
+const logDirectory = path.join(/home/sheyla-germosen/Desktop, 'logs');
+
+//  CREATE LOGS DIRECTORY IF IT DOESN'T EXIST
+if (!fs.existsSync(logDirectory)) {
+    fs.mkdirSync(logDirectory);
+}
+
+const accessLogStream = fs.createWriteStream(
+    path.join(logDirectory, "access.log"),
+    { flags: 'a' }
+);
+
+//  ENABLE LOGGING
+app.use(morgan('combined', { stream: accessLogStream }));
 
 //middleware to parse JSON request bodies
 app.use(express.json());
@@ -64,4 +82,3 @@ app.get("/getUsers", async(req, res)=>{
     const userData = await UserModel.find();
     res.json(userData);
 });
-
