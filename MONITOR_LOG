@@ -1,0 +1,27 @@
+_________________________________
+[1] ::ffff:127.0.0.1 - - [19/Dec/2025:03:47:04 +0000] "GET /getUsers HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[2] ::ffff:127.0.0.1 - - [19/Dec/2025:03:47:04 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/getUsers" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[3] ::ffff:127.0.0.1 - - [19/Dec/2025:03:51:57 +0000] "GET /getUsers HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[4] ::ffff:127.0.0.1 - - [19/Dec/2025:03:51:57 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/getUsers" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[5] ::ffff:127.0.0.1 - - [19/Dec/2025:03:52:02 +0000] "GET /Users HTTP/1.1" 500 45 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[6] ::ffff:127.0.0.1 - - [19/Dec/2025:03:52:02 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/Users" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[7] ::ffff:127.0.0.1 - - [19/Dec/2025:03:52:07 +0000] "GET /Users/690a5992f89b8fa937b01af1 HTTP/1.1" 500 45 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[8] ::ffff:127.0.0.1 - - [19/Dec/2025:03:52:07 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/Users/690a5992f89b8fa937b01af1" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[9] ::ffff:127.0.0.1 - - [19/Dec/2025:03:55:27 +0000] "GET /Users/690a5992f89b8fa937b01af1 HTTP/1.1" 500 45 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[10] ::ffff:127.0.0.1 - - [19/Dec/2025:03:55:27 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/Users/690a5992f89b8fa937b01af1" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+_________________________________
+[1] ::ffff:127.0.0.1 - - [19/Dec/2025:03:47:04 +0000] "GET /getUsers HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[2] ::ffff:127.0.0.1 - - [19/Dec/2025:03:47:04 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/getUsers" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[3] ::ffff:127.0.0.1 - - [19/Dec/2025:03:51:57 +0000] "GET /getUsers HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[4] ::ffff:127.0.0.1 - - [19/Dec/2025:03:51:57 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/getUsers" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[5] ::ffff:127.0.0.1 - - [19/Dec/2025:03:52:02 +0000] "GET /Users HTTP/1.1" 500 45 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[6] ::ffff:127.0.0.1 - - [19/Dec/2025:03:52:02 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/Users" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[7] ::ffff:127.0.0.1 - - [19/Dec/2025:03:52:07 +0000] "GET /Users/690a5992f89b8fa937b01af1 HTTP/1.1" 500 45 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[8] ::ffff:127.0.0.1 - - [19/Dec/2025:03:52:07 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/Users/690a5992f89b8fa937b01af1" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[9] ::ffff:127.0.0.1 - - [19/Dec/2025:03:55:27 +0000] "GET /Users/690a5992f89b8fa937b01af1 HTTP/1.1" 500 45 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[10] ::ffff:127.0.0.1 - - [19/Dec/2025:03:55:27 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/Users/690a5992f89b8fa937b01af1" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[11] ::ffff:127.0.0.1 - - [19/Dec/2025:04:06:02 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[12] ::ffff:127.0.0.1 - - [19/Dec/2025:04:06:05 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[13] ::ffff:127.0.0.1 - - [19/Dec/2025:04:11:46 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[14] ::ffff:127.0.0.1 - - [19/Dec/2025:04:11:57 +0000] "GET /getUsers HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 
+[15] ::ffff:127.0.0.1 - - [19/Dec/2025:04:11:57 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/getUsers" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" |  |  | 

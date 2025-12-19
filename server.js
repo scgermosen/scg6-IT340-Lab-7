@@ -10,7 +10,7 @@ const path = require('path');
 const morgan = require('morgan');
 require('dotenv').config();
 
-const logDirectory = path.join(/home/sheyla-germosen/Desktop, 'logs');
+const logDirectory = path.join("./server", 'logs');
 
 //  CREATE LOGS DIRECTORY IF IT DOESN'T EXIST
 if (!fs.existsSync(logDirectory)) {
@@ -23,7 +23,10 @@ const accessLogStream = fs.createWriteStream(
 );
 
 //  ENABLE LOGGING
-app.use(morgan('combined', { stream: accessLogStream }));
+app.use(
+    morgan(':date[iso] | :method :url | :status | :response-time ms', { 
+        stream: accessLogStream 
+    }));
 
 //middleware to parse JSON request bodies
 app.use(express.json());
